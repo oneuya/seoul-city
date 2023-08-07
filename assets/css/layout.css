@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import './reset.css';
+@import './common.css';
+
+.header .group-top{ 
+    display: flex;
+    gap: 70px;
+    height: 48px;}
+
+.header .group-top .logo{
+    width: 105px;
+    height: 27px;
+    margin-top: 8px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_set_common.png) no-repeat -5px -165px;
+}
+
+.header .group-top .gnb{
+    align-content: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    width: 1051px;
+    align-items: center;
+}
+.header .group-top .gnb .nav-list{
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.header .group-top .gnb .nav-item:hover{
+    color: #2292e9;
+}
+
+.header .group-top .gnb .util-list{
+    display: flex; 
+    gap: 20px;
+    padding: 0 10px;
+    font-weight: 700;
+
+}
+
+.header .group-top .gnb .util-item:hover{
+    color: #2292e9;
+}
+
+
+.header .group-bottom{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.header .group-bottom .logo{
+    width: 133px;
+    height: 51px;
+    margin: 38px 0 30px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/common/seoul-slogan.png);
+
+}
+.header .group-bottom .search-area{
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -326px;
+    margin-top: 0;
+    box-sizing: border-box;
+    
+}
+.header .group-bottom .search-area form{}
+.header .group-bottom .search-area .blue-bd{}
+.header .group-bottom .search-area .blue-bd input{
+    position: absolute;
+    width: calc(100% - 42px);
+    border: 0;
+    padding: 0 10px;
+    height: 38px;
+    line-height: 38px;
+    box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle;
+    background: transparent;
+}
+
+.header .group-bottom input::placeholder{
+    color: #2292e9;
+    font-size: 14px;
+
+}
+.header .group-bottom .search-area .blue-bd .btn-keyboard{
+    width: 29px;
+    height: 16px;
+    background: url(https://www.seoul.go.kr/ksearch/res_newseoul/images/search/keyboard.png);
+    margin-left: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 42px;
+}
+.header .group-bottom .search-area .blue-bd .btn-submit{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 0;
+    padding: 0;
+    background: url(../img/icon_set_common_1.png) no-repeat -32px -97px;
+}
+
+.header .group-bottom .weather-area{
+    width: 270px;
+    height: 85px;
+    margin-top: 34px;
+    display: flex;
+}
+.header .group-bottom .weather-area .img-box{}
+.header .group-bottom .weather-area .text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    
+}
+.header .group-bottom .weather-area .text-wrap .temp-box{
+    line-height: 1.35em;
+    vertical-align: bottom;
+
+
+}
+.header .group-bottom .weather-area .text-wrap .temp-box strong{
+    font-size: 25px;
+    line-height: 25px;
+    margin-right: 15px;
+}
+.header .group-bottom .weather-area .text-wrap .temp-box span{
+    font-size: 16px;
+    font-weight: normal;
+
+}
+.header .group-bottom .weather-area .text-wrap .dust-box{
+    line-height: 1.35em;
+    line-height: 14px;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 7px;
+
+}
+.header .group-bottom .weather-area .text-wrap .dust-box .bad{
+    color: #f00;
+    font-size: 14px;
+}
+.header .group-bottom .weather-area .text-wrap .dust-box .normal{
+    color: #009944;
+    font-size: 14px;
+
+}
+
+.header .group-bottom .lang-area{
+    width: 110px;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.header .group-bottom .lang-area select{
+    width: 80px;
+    height: 21px;
+    border-color: #afcfea;
+    color: #1E6CB3;
+    font-size: 12px;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+.header .group-bottom .lang-area select option{
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.header .group-bottom .lang-area .btn-lang{
+    font-weight: normal;
+    line-height: 21px;
+    height: 21px;
+    width: 30px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #1E6CB3;
+    border: 0;
+    padding: 0;
+
+}
+
+.sc-related{
+    position: relative;
+    margin-bottom: 20px;
+}
+.sc-related .related-list{
+    display: flex;
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    background: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+.sc-related .related-item{
+    flex: 1;
+}
+.sc-related .related-item+.related-item{
+    border-left: 1px solid #d0d0d0;
+    
+}
+.sc-related .btn-related{
+    position: relative;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sc-related .btn-related.active{background: #e2e2e2;}
+.sc-related .btn-related span{position: relative;
+    padding-right: 20px;
+}
+.sc-related .btn-related span::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    height: 7px;
+    width: 7px;
+    border-style: solid;
+    border-color: #373737;
+    border-width: 0px 2px 2px 0px;
+    
+    transform: rotate(-135deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: center center;
+    content: '';
+}
+.sc-related .btn-related.active span::after{
+    top: 4px;
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
+.sc-related .sub{
+    padding: 10px 20px 20px;
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    width: 100%;
+    bottom: 100%;
+    z-index: 2;
+    color: #555555;
+    text-align: left;
+}
+.sc-related .sub .sub-wrapper{
+    display: flex;
+
+}
+
+.sc-related .sub .sub-list{
+    flex: 1;
+}
+.sc-related .sub li{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer{
+
+}
+.footer .common-inner{}
+.footer .common-inner .group-link{
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+
+}
+.footer .common-inner .group-link .f-nav-list{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.footer .common-inner .group-link .f-nav-list li{}
+.footer .common-inner .group-link .f-nav-list li+li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    display: block;
+    width: 1px;
+    height: 14px;
+    margin-top: -6px;
+    background: #dcdcdc;
+}
+.footer .common-inner .group-link .f-nav-list li a{
+    font-size: 12px;
+    color: #636363;
+
+}
+.footer .common-inner .group-link .f-nav-list li a.bd{
+    color: #000;
+    font-weight: 700;
+
+}
+.footer .common-inner .group-link .sns-list{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+
+}
+.footer .common-inner .group-link .sns-list li{
+
+}
+.footer .common-inner .group-link .sns-list li a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    text-indent: -9999em;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_sns.png) no-repeat;
+}
+
+.footer .common-inner .group-link .sns-list li .face{background-position: -25px 0;}
+.footer .common-inner .group-link .sns-list li .twitter{background-position: -50px 0;}
+.footer .common-inner .group-link .sns-list li .insta{background-position: -75px 0;}
+.footer .common-inner .group-link .sns-list li .kakao{background-position: -100px 0;}
+.footer .common-inner .group-link .sns-list li .youtube{background-position: -125px 0;}
+.footer .common-inner .group-link .sns-list li .blog{background-position: -150px 0;}
+
+.footer .common-inner .group-info{
+    display: flex;
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+}
+.footer .common-inner .group-info .contact-area{
+    margin-right: 40px;
+
+    width: 108px;
+    height: 45px;
+    background: url(../img/icon_set_common_1.png) no-repeat -180px 0;
+}
+.footer .common-inner .group-info .addr-area{
+    padding-bottom: 2px;
+    font-size: 12px;
+    color: #636363;
+    line-height: 1.35em;
+    letter-spacing: -0.05em;
+}
+.footer .common-inner .group-info .addr-area p{}
+.footer .common-inner .group-info .addr-area p a{}
+.footer .common-inner .group-info .marks-area{
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.main-top-btn{
+    position: fixed;
+    left: 50%;
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin-left: 600px;
+    z-index: 1000000;
+    opacity: 1;
+    bottom: 98px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/btn_top.png);
+    transition: 0.5s;
+}
+
+.main-top-btn.on{
+    opacity: 0;
+    transform: translateY(150px);
+}

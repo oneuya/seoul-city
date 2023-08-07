@@ -1,0 +1,48 @@
+.blind{
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.wrap-inner{
+    width: 1152px;
+    margin: 0 auto;
+    min-width: 1152px;
+}
+
+.covid p a::after{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/main/ico-triangle.png);
+    background-position: 0 0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Nanum Gothic';
+    font-weight: normal;
+    color: #222;
+    font-style: normal;
+    line-height: 1.35em;
+}
+
+.main-new .ico-plus::after{
+    
+}
+
+
+
+
+/* sp1 */
+
+.sc-visual .group-nav .btn-nav::before{
+    background-image: url('https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png');
+    background-repeat: no-repeat;
+}

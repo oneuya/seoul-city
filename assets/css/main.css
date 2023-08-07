@@ -1,0 +1,962 @@
+
+@import './layout.css';
+
+
+
+
+
+/* inner1 */
+.inner1{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    
+}
+.inner1 .col-left{width: 770px;
+    }
+.inner1 .col-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 360px;
+   }
+
+.sc-visual{
+    display: flex;
+    height: 100%;
+}
+.sc-visual .group-nav{ 
+    display: flex; 
+    flex-direction: 
+    column; width: 80px;}
+.sc-visual .group-nav .btn-nav{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    background-color: #d2e1e9;
+    color: #333;
+    font-weight: 600;}
+.sc-visual .group-nav .btn-nav::before{ 
+    width: 50px; 
+    height: 50px;
+     background-color: #fff;
+     border-radius: 50%; 
+     content: ''; }
+.sc-visual .group-nav .btn-nav.news::before{
+    background-position: 0 0;}
+.sc-visual .group-nav .btn-nav.citizen::before{
+    background-position: -50px 0px;}
+.sc-visual .group-nav .btn-nav.active{
+    background-color: #0158a8;
+    color: #fff;
+}
+
+.sc-visual .group-nav .btn-nav.active::after{
+    content: " ";
+    position: absolute;
+    z-index: 10;
+    right: -32px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 32px;
+    border-color: transparent transparent transparent #0158a8;
+    margin-top: -25px;
+}
+
+
+.sc-visual .group-slide{
+    width: 690px;
+    background: #f00;}
+
+.sc-visual .swiper{
+}
+.sc-visual .swiper-slide{}
+
+.sc-visual .swiper-slide a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sc-visual .swiper-slide img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.sc-visual .swiper-slide .desc{ 
+    position: absolute; 
+    left: 0; bottom: 0px; 
+    width: 100%; height: 40px; 
+    line-height: 40px; 
+    padding-left: 10px; padding-right: 122px; 
+    background-color: rgba(0,0,0,.7); 
+    color: #fff; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    box-sizing: border-box; 
+}
+
+.sc-visual .control{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    bottom: 4px;
+    width: 120px;
+    height: 32px;
+
+}
+
+.sc-visual .control::before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 68px;
+    width: 1px;
+    height: 18px;
+    background: rgba(255,255,255,.5);
+}
+
+.sc-visual .control .fraction{
+    flex: 1;
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 13px;
+    width: auto;
+}
+
+.sc-visual .control .fraction::after{
+
+}
+.sc-visual .control .btn{
+    flex: 1;
+    display: flex;
+}
+
+
+.sc-visual .control .btn.prev{
+    background-image: url(../img/icon_set_common_1.png);
+    background-position: -237px -284px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+    left: 54px;
+}
+
+
+.sc-visual .control .btn.next{
+    background-image: url(../img/icon_set_common_1.png);
+    background-position: -255px -284px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+    right: 2px;
+
+}
+.sc-visual .control .autoplay{
+    background-image: url(../img/icon_set_common_1.png);
+    background-repeat: no-repeat;
+    background-position: -283px -284px;
+    text-indent: -9999px;
+    position: absolute;
+    display: block;
+    right: 21px;
+    top: calc(50% + 1px);
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.sc-visual .control .autoplay.on{
+    background-image: url(../img/icon_set_common_1.png);
+    background-position: -269px -284px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+
+}
+
+
+.col-right{}
+.sc-covid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    height: 36px;
+    background-color: #99ddf4;
+}
+.sc-covid .title{
+
+}
+.sc-covid .sub-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 21px;
+    padding-left: 4px;
+    background-color: #319ac6;
+    border-radius: 5px;
+    color: #fff;
+}
+.sc-covid .sub-area .desc{}
+.sc-covid .sub-area .num{
+    margin: 0 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.sc-covid .sub-area .link-all{
+    display: inline-flex;
+    align-items: center;
+    height: 21px;
+    margin-left: 2px;
+    padding: 0 2px 0 4px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.sc-covid .sub-area .link-all::after{
+    content: '';
+    width: 8px;
+    height: 11px;
+    margin-left: 3px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/main/ico-triangle.png) no-repeat 0 0;
+
+}
+
+.sc-covid .date{
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+}
+
+
+.sc-municipal{
+    background: url(https://www.seoul.go.kr/upload/mayornews/MAYORNEWS_20230524161142_67457.jpg) no-repeat 50% 50%;
+    background-size: auto 100%;
+    position: relative;
+    width: 100%;
+    height: 204px;
+}
+.sc-municipal a{
+    background: url(https://www.seoul.go.kr/upload/mayornews/MAYORNEWS_20230524161142_67457.jpg) no-repeat 50% 50%;
+    background-size: auto 100%;
+}
+.sc-municipal p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    background: rgba(0,0,0, .7);
+    color: #fff;
+    font-weight: 700;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.sc-mayor{
+    width: 360px;
+    height: 90px;
+position: relative;}
+.sc-mayor .mayor-bg{
+}
+.sc-mayor .link-go{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    right: 15px;
+    top: 18px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/main/btn-mayorlink0.png);
+}
+.sc-mayor .sub-area{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 26px;
+
+
+}
+
+.sc-mayor .sub-area a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(25% - 1px);
+    height: 100%;
+    background-color: #8b7153;
+}
+
+
+
+.sc-service{
+    position: relative;
+    padding: 50px 0 0;
+}
+.sc-service .group-header{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35em;
+}
+.sc-service .group-header h2{}
+.sc-service .group-header .sub-area{
+    position: absolute;
+    top: 55px;
+    right: 0;
+}
+.sc-service .group-header .sub-area a{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 30px;
+    background: url(../img/story-logo.png) no-repeat 0 0;
+}
+
+.sc-service .group-header .link-story:hover{
+    background-position: 0 -30px;
+}
+
+.sc-service .group-header .sub-area a.link-story{
+    width: 65px;
+    margin-right: 14px;
+}
+
+.sc-service .group-header .sub-area a.link-story::after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: -15px;
+    width: 1px;
+    height: 16px;
+    background: #dbdbdb;
+}
+.sc-service .group-header .sub-area .link-festival{
+    width: 95px;
+    margin-left: 14px;
+    background-position: -65px 0;
+
+}
+
+.sc-service .group-header .link-festival:hover{
+    background-position: -65px -30px;
+}
+
+
+.sc-service .service-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sc-service .service-list li{
+    width: auto;
+    height: 90px;
+    text-align: center;
+}
+
+.sc-service .service-list li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.sc-service .service-list li a i{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_service_202205.png);
+}
+
+.sc-service .service-list li .public i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -360px 0;
+    box-sizing: border-box;
+}
+
+.sc-service .service-list li .answer i{
+    background-position: 0 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+
+}
+.sc-service .service-list li .job i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -120px 0;
+}
+.sc-service .service-list li .realestate i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -300px 0;
+}
+.sc-service .service-list li .portal i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -180px 0;
+}
+.sc-service .service-list li .welfare i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -960px 0;
+}
+.sc-service .service-list li .house i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -780px 0;
+}
+.sc-service .service-list li .young i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -1140px 0;
+}
+.sc-service .service-list li .mediahub i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -1020px 0;
+}
+.sc-service .service-list li .democracy i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -60px 0;
+}
+.sc-service .service-list li .ebook i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -1080px 0;
+}
+.sc-service .service-list li .council i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-position: -600px 0;
+}
+
+
+.sc-service .link-all{
+    width: 112px;
+    height: 29px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    padding-left: 13px;
+    line-height: 28px;
+    right: auto;
+    left: 140px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_link6.png) no-repeat right 13px top 50%;
+}
+
+
+
+.sc-direct{
+    margin-top: 35px;
+    background: #eff4f8;
+}
+.sc-direct .direct-list{
+    display: flex;
+    justify-content: center;
+}
+.sc-direct .direct-list li{
+    position: relative;
+    padding: 20px 0;
+}
+.sc-direct .direct-list li+li a::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    width: 1px;
+    height: 60px;
+    background: #dbdbdb;
+}
+
+
+.common-inner{
+}
+.common-inner .inner2{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px;
+    border-bottom: 2px solid #222222;
+    box-sizing: border-box;
+}
+.inner2 .sc-board{
+    width: 360px;
+    position: relative;
+}
+.inner2 .sc-board h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #dbdbdb;
+    font-weight: 700;
+    line-height: 1.35em;
+}
+.inner2 .sc-board .bd-list{
+}
+.inner2 .sc-board .bd-list .bd-item{
+    padding: 6px 0 6px 0;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.inner2 .sc-board .bd-list .bd-item a{
+    display: flex;
+    gap: 9px;
+
+}
+.inner2 .sc-board .bd-list .bd-item a em.eco{color: #599100;}
+.inner2 .sc-board .bd-list .bd-item a em.culture{color: #9b64d3;}
+.inner2 .sc-board .bd-list .bd-item a em.economy{color: #069363;}
+.inner2 .sc-board .bd-list .bd-item a em.work{color: #028ab6;}
+
+.inner2 .sc-board .bd-list .bd-item a p{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #222;
+}
+.inner2 .sc-board .link-all{
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 22px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background: url(../img/icon_set_common_1.png) no-repeat -1px -1px;
+}
+
+
+.inner2 .sc-often{
+    width: 360px;
+}
+.inner2 .sc-often h2{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    line-height: 1.35em;
+
+}
+.inner2 .sc-often ul{
+    margin: 0;
+    padding: 17px 5px 7px 20px;
+    background: #eff4f8;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.inner2 .sc-often ul li{
+    position: relative;
+    padding: 0 0 10px 10px;
+}
+
+.inner2 .sc-often ul li::before{
+    content: '';
+    position: absolute;
+    background: #666666;
+    width: 2px;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.sc-info{
+    height: 237.39px;
+    padding-top: 40px;
+}
+.sc-info h2{
+    padding: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35em;
+
+}
+.sc-info ul{
+    height: 145px;
+    padding: 0 27px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.sc-info ul li{
+    width: 85px;
+    height: 145px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_house.png) no-repeat;
+
+}
+
+.sc-info ul li .economy{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_economy.png) no-repeat;
+}
+.sc-info ul li .traffic{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_traffic.png) no-repeat;
+}
+.sc-info ul li .eco{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_environment.png) no-repeat;
+}
+.sc-info ul li .welfare{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_welfare.png) no-repeat;
+}
+.sc-info ul li .safty{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_safty.png) no-repeat;
+}
+.sc-info ul li .cul{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_culture.png) no-repeat;
+}
+.sc-info ul li .work{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_work.png) no-repeat;
+}
+
+.sc-info ul li a{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 100px;
+}
+
+
+.sc-news{
+    position: relative;
+    padding: 20px 0 30px;
+}
+.sc-news h2{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 1.35em;
+}
+.sc-news ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.sc-news ul li a .img-box{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sc-news ul li a .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+
+}
+
+.sc-news ul li .img-box:hover img{
+    scale: 1.1;
+}
+.sc-news ul li a .img-box em{
+    position: absolute;
+    bottom: 0;
+    width: 82px;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    z-index: 1;
+    background-color: #d76000;
+    font-weight: 700;
+}
+.sc-news ul li a .img-box em.cul{background-color: #9b64d3;}
+.sc-news ul li a .img-box em.home{background-color: #c35c3c;}
+.sc-news ul li a .img-box em.traffic{background-color: #337ee2;}
+.sc-news ul li a .img-box em.eco{background-color: #599100;}
+.sc-news ul li a .img-box em.work{background-color: #028ab6;}
+
+.sc-news ul li a p{
+    margin-top: 15px;
+    font-size: 16px;
+    height: 3em;
+    width: 100%;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: normal;
+    color: #222;
+    letter-spacing: -0.05em;
+}
+
+.sc-news .link-all{
+    font-size: 15px;
+    color: #7d7d7d;
+    display: inline-block;
+    width: 100%;
+    width: 75px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    background: url(../img/icon_set_common_1.png) no-repeat 0 -259px;
+}
+
+.sc-media{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sc-media .group-video{}
+.sc-media .group-video h3{
+    padding-bottom: 11px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35em;
+
+}
+.sc-media .group-video a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.sc-media .group-video img{
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.sc-media .group-video a:hover img{
+    scale: 1.1;
+}
+
+.sc-media .group-video .desc{
+    background-color: rgba(0,0,0,.5);
+    padding: 11px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.sc-media .group-news{
+    width: 480px;
+}
+.sc-media .group-news h3{
+    padding-bottom: 11px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35em;
+
+
+}
+.sc-media .group-news .news-list{}
+.sc-media .group-news .news-list li{
+    padding: 8px 0;
+    width: 100%;
+
+
+}
+.sc-media .group-news .news-list .news-item a{
+    display: flex;
+    gap: 18px;
+}
+.sc-media .group-news .news-list li em{
+    font-size: 16px;
+    font-weight: 400;
+    color: #09ac43;
+}
+.sc-media .group-news .news-list li p{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.35em;
+
+}
+
+
+.sc-media .sns-area{
+    position: relative;
+    width: 350px;
+    height: 195px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/main/bg_sns_list_202205.jpg?ver=20191204) no-repeat 0 0;
+}
+.sc-media .sns-area h3{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 1.2;
+    padding: 12px 15px;
+    font-size: 22px;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: #222222;
+
+}
+.sc-media .sns-area h3::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 41px;
+    height: 24px;
+    margin-left: 8px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/main/ico_sns_list_202205.png?ver=20210113) no-repeat -247px 0;
+    border-left: 1px solid #878787;
+    padding-right: 6px;
+}
+.sc-media .sns-area ul{
+    display: flex;
+    gap: 6px;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.sc-media .sns-area ul li{
+
+}
+
+.sc-media .sns-area ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/main/ico_sns_list_202205.png?ver=20210401) no-repeat;
+    text-indent: -9999em;
+}
+
+.sc-media .sns-area ul li a.insta{background-position: 0px 0;}
+.sc-media .sns-area ul li a.face{background-position: -40px 0;}
+.sc-media .sns-area ul li a.twitter{background-position: -80px 0;}
+.sc-media .sns-area ul li a.blog{background-position: -120px 0;}
+.sc-media .sns-area ul li a.youtube{background-position: -160px 0;}
+.sc-media .sns-area ul li a.kakao{background-position: -200px 0;}
+
+
+.sc-bannerslide{
+    position: relative;
+    padding: 50px 0 50px 0;
+    border-top: 2px solid #222;
+    box-sizing: border-box;
+}
+.sc-bannerslide .swiper{}
+
+.sc-bannerslide .swiper .control{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+
+
+}
+.sc-bannerslide .swiper .control span{
+    width: auto;
+    letter-spacing: -1px;
+}
+.sc-bannerslide .swiper .control .con-btn{
+    display: flex;
+    gap: -2px;
+
+}
+.sc-bannerslide .swiper .control .btn{
+    width: 21px;
+    height: 21px;
+    border: 1px solid #999;
+    background: url(../img/icon_set_common_1.png) no-repeat;
+    text-indent: -9999px;
+
+
+}
+.sc-bannerslide .swiper .control .prev{
+    background-position: -45px -43px;
+    border-right: 1px solid #fff;
+}
+.sc-bannerslide .swiper .control .autoplay{
+    
+    background-position: -101px -43px;
+
+}
+.sc-bannerslide .swiper .control .autoplay.on{
+    background-position: -65px -43px;
+
+}
+.sc-bannerslide .swiper .control .next{
+    background-position: -86px -43px;
+    border-left: 1px solid #fff;
+}
+
+.sc-bannerslide .swiper .swiper-wrapper{}
+.sc-bannerslide .swiper .swiper-wrapper .swiper-slide{}
+.sc-bannerslide .swiper .swiper-wrapper .swiper-slide a{}

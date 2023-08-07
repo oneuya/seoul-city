@@ -1,0 +1,11 @@
+@import './utill/var'; //변수 
+@import './utill/mixin'; //재활용 가능한 소스
+
+@import './base/typo'; //폰트
+@import './base/reset';
+@import './base/common';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './page/main';
